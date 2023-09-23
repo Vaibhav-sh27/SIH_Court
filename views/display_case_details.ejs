@@ -49,15 +49,16 @@
 
         <% if(user_type === "c")
         { %>
-            <form action="/lawyer/display_lawyer_profile/<%= lawyer_id %>" method="GET" id="lawyer-details-form"></form>
+            <form action="/chat" method="GET" id="lawyer-details-form"></form>
 
             <script src="/js/show_lawyer_details_btn.js"></script>
         <% }
 
+        
+
         else if(user_type === "l")
         { %>
-            <form action="/chat/get_chat/<%= _id %>" method="GET" id="case-details-form"></form>
-
+            <form action="/chat" method="GET" id="case-details-form"></form>
             <script src="/js/show_chat_btn.js"></script>
         <% } %>
     </body>

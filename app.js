@@ -64,12 +64,9 @@ app.use("/", require("./routes/index.js"));
 app.use("/client", require("./routes/client.js"));
 app.use("/lawyer", require("./routes/lawyer.js"));
 app.use("/judge", require("./routes/judge.js"));
-app.use("/chat", require("./routes/chat.js"));
+// app.use("/chat", require("./routes/chat.js"));
 
-app.get("/chat/get_chat", (req, res) => {
-  console.log("___aya chat screen");
-  res.sendFile(__dirname + "/public/html/msg.html");
-});
+
 
 const PORT = process.env.PORT || 5000;
 const server = app.listen(PORT, (err) => {
@@ -80,3 +77,4 @@ const server = app.listen(PORT, (err) => {
 
 const io = require("socket.io")(server);
 onSocket(io);
+ 

@@ -57,6 +57,18 @@ router.get
         res.render('login');
     }
 );
+
+router.get
+(
+    '/chat',
+    ensureAuthenticated,
+    (req, res) =>
+    {
+        res.render('msg');
+    }
+);
+
+
 router.post
 (
     '/login',
