@@ -49,7 +49,7 @@
 
         <% if(user_type === "c")
         { %>
-            <form action="/chat" method="GET" id="lawyer-details-form"></form>
+            <form action="/lawyer/display_lawyer_profile/<%= lawyer_id %>" method="GET" id="lawyer-details-form"></form>
 
             <script src="/js/show_lawyer_details_btn.js"></script>
         <% }
