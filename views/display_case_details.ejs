@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -13,6 +14,16 @@
                 <%= case_name %>'s Details
             </i></h2>
     </center>
+    <div id="google_element">
+
+    </div>
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+
+    <script>
+        function loadGoogleTranslate(){
+            new google.translate.TranslateElement("google_element")
+        }
+    </script>
 
     <br>
     <br>
@@ -95,3 +106,15 @@
 </body>
 
 </html>
+<script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "bUHmqdsLeAacHKnsmgSPM",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="bUHmqdsLeAacHKnsmgSPM"
+    domain="www.chatbase.co"
+    defer>
+    </script>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -13,6 +14,16 @@
     <body class="home">
         <h1><i class="fa fa-dashboard" style="font-size:48px;color:black"></i>
             <b><%= f_name %>'s Dashboar</b></h1>
+            <div id="google_element">
+
+            </div>
+            <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+
+            <script>
+                function loadGoogleTranslate(){
+                    new google.translate.TranslateElement("google_element")
+                }
+            </script>
         <div class="container-fluid display-table">
             <div class="row display-table-row">
                 <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
@@ -116,3 +127,15 @@
         </div>
     </body>
 </html>
+<script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "bUHmqdsLeAacHKnsmgSPM",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="bUHmqdsLeAacHKnsmgSPM"
+    domain="www.chatbase.co"
+    defer>
+    </script>
