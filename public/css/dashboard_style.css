@@ -148,6 +148,7 @@ background-color: #f1f1c1;
   width: 100%;
 }
 
+
 .form-btn {
   background: #5584ff none repeat scroll 0 0;
   border: medium none;
@@ -431,6 +432,7 @@ header {
   padding: 0 20px;
 }
 table {
+  margin: 20px;
 font-family: arial, sans-serif;
 border-collapse: collapse;
 width: 100%;
@@ -998,6 +1000,8 @@ background-color: #f1f1c1;
 .icon-info {
   position: relative;
 }
+
+
 .navi i {
   font-size: 20px;
 }

@@ -2,12 +2,11 @@
 
 <html>
     <head>
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
-            integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+        <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+            integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"> -->
         <link type="text/css" rel="stylesheet" href="/css/dashboard_style.css">
     </head>
 
@@ -29,7 +28,7 @@
                 <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
                     <div class="logo">
                     </div>
-                    <div class="navi">
+                    <div class="navi"  >
                         <ul>
 
                             <!-- <li><a href="#"><i class="fa fa-home" style="font-size:20px" aria-hidden="true"></i><span
@@ -41,8 +40,8 @@
                             <li><a href="#"> <i class="fa fa-sign-out" style="font-size:20px" aria-hidden="true"></i><span
                                         class="hidden-xs hidden-sm">Logout</span></a></li> -->
 
-                            <li><form action="/lawyer/dashboard" method="GET"><button  type="submit"><i class="fa fa-home btn-box" style="font-size:20px" ></i>Dashboard</button></form></li>
-                            <li><form action="/lawyer/profile" method="GET"><button type="submit"><i class="fa fa-home" style="font-size:20px" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Edit profile details</span></button></form></li>
+                            <li><form action="/lawyer/dashboard" method="GET"><button class="btn1" type="submit"><i class="fa fa-home btn-box" style="font-size:20px" ></i>Dashboard</button></form></li>
+                            <li><form action="/lawyer/profile" method="GET"><button  type="submit"><i class="fa fa-home" style="font-size:20px" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Edit profile details</span></button></form></li>
                             <li><form action="" method="GET"><button type="submit"><i class="fa fa-plus" style="font-size:20px" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Add Invoice</span></button></form></li>
                             <li><form action="" method="GET"><button type="submit"><i class="fa fa-bell" style="font-size:20px" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Notifications</span></button></form></li>
                             <li><form action="/logout" method="GET"><button type="submit"><i class="fa fa-sign-out" style="font-size:20px" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Log Out</span></button></form></li>
@@ -59,8 +58,8 @@
 
                 <%- include('./partials/messages.ejs') %>
 
-                <caption>
-                    <div align="left" style="font-size:200%;"><b>Active Cases:</b></div>
+                <caption >
+                    <div  align="left" style="font-size:200%; margin-left: 20px;"><b>Active Cases:</b></div>
                 </caption>
 
                 <table>
