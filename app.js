@@ -7,7 +7,7 @@ const session = require('express-session');
 const passport = require('passport');
 const express = require('express');
 const app = express();
-
+// app.use(express.favicon(__dirname + '/public/images/logo_image.jpeg') 
 const onSocket=require('./socket.js');
 //passport config
 require('./config/passport')(passport);

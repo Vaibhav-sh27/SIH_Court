@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +9,16 @@
 
     <body>
         <center><h2><i class="fa fa-user-plus" style="font-size:32px"> <%= f_name %>'s Details</i></h2></center>
+        <div id="google_element">
 
+        </div>
+        <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+
+        <script>
+            function loadGoogleTranslate(){
+                new google.translate.TranslateElement("google_element")
+            }
+        </script>
         <%- include('./partials/messages.ejs') %>
 
         <form action="/judge/profile" method="POST">
@@ -54,3 +64,15 @@
         </form>
     </body>
 </html>
+<script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "bUHmqdsLeAacHKnsmgSPM",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="bUHmqdsLeAacHKnsmgSPM"
+    domain="www.chatbase.co"
+    defer>
+    </script>
