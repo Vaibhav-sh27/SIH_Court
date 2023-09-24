@@ -18,6 +18,12 @@ const CaseDetailsSchema = new mongoose.Schema
         lawyer_id: {
             type: Object()
         },
+
+        judge_id: {
+            type: Object(),
+            default: Object("650fa82fe7d9c93560dd8d5e")
+        },
+
         isLawyerAssigned: {
             type: String,
             default: "Y"
