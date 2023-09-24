@@ -7,6 +7,7 @@ const {ensureAuthenticated} = require('../config/auth');
 
 //include model
 const CaseDetails = require('../models/CaseDetails');
+
 const User = require('../models/User');
 
 //dashboard

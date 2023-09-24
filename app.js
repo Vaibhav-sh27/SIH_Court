@@ -8,7 +8,7 @@ const passport = require('passport');
 const express = require('express');
 const app = express();
 
-
+const onSocket=require('./socket.js');
 //passport config
 require('./config/passport')(passport);
 
@@ -75,11 +75,11 @@ app.use('/', require('./routes/index.js'));
 app.use('/client', require('./routes/client.js'));
 app.use('/lawyer', require('./routes/lawyer.js'));
 app.use('/judge', require('./routes/judge.js'));
-app.use('/chat', require('./routes/chat.js'));
+// app.use('/chat', require('./routes/chat.js'));
 
 
 const PORT = process.env.PORT || 5000;
-app.listen
+const server=app.listen
 (
     PORT,
     (err) =>
@@ -90,3 +90,5 @@ app.listen
         console.log(`Server started on PORT ${PORT}...`);
     }
 );
+const io=require("socket.io")(server);
+onSocket(io);
