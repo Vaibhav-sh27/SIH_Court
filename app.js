@@ -11,10 +11,10 @@ Not the same as the other error msgs, as those were just rendering a view with t
 const session = require('express-session');
 const passport = require('passport');
 const express = require('express');
-const favicon = require('serve-favicon')
+// const favicon = require('serve-favicon')
 
 var app = express()
-app.use(favicon(__dirname + '/public/images/favicon.ico'));
+// app.use(favicon(__dirname + '/public/images/favicon.ico'));
 const onSocket=require('./socket.js');
 //passport config
 require('./config/passport')(passport);
@@ -75,7 +75,7 @@ app.use
         res.locals.error = req.flash('error');
         next();
     }
-);
+); 
 
 //Routes
 app.use('/', require('./routes/index.js'));
