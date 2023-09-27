@@ -87,6 +87,18 @@ router.post
                 }
             )(req, res, next);
         }
+        else if(req.body.personType == 'j') //client
+        {
+            passport.authenticate
+            (
+                'local',
+                {
+                    successRedirect: '/judge/dashboard',
+                    failureRedirect: '/login',
+                    failureFlash: true
+                }
+            )(req, res, next);
+        }
         else //lawyer
         {
             passport.authenticate

@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+
 const CaseDetailsSchema = new mongoose.Schema
 (
     {
@@ -18,6 +19,13 @@ const CaseDetailsSchema = new mongoose.Schema
         lawyer_id: {
             type: Object()
         },
+
+        judge_id: {
+            type: Object(),
+            default: mongoose.Types.ObjectId('650fa82fe7d9c93560dd8d5e')
+            // default: mongoose.ObjectId("650fa82fe7d9c93560dd8d5e")
+        },
+
         isLawyerAssigned: {
             type: String,
             default: "Y"

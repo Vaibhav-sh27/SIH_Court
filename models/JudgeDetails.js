@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const JudgeDetailsSchema = new mongoose.Schema
 (
     {
-        judge_id: {
+        lawyer_id: {
             type: Object(),
             required: true
         },
